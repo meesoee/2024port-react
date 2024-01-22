@@ -1,0 +1,44 @@
+header {
+    background-color: var(--dark-blue);
+
+    .headerBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            @media (max-width: 800px){
+                display: none;
+            }
+
+            ul {
+                width: 800px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (max-width: 800px){
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+
+        #navToggle {
+            display: none;
+            @media (max-width: 800px){
+                display: block;
+            }
+        }
+        
+        nav.show {
+            display: block;
+        }
+        
+        #top {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
