@@ -2,9 +2,9 @@ import React from "react";
 
 const Archive = () => {
     return (
-        <div className="Archive">
+        <section className="Archive">
             Archive
-        </div>
+        </section>
     );
 };
 

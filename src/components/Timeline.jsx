@@ -2,9 +2,9 @@ import React from "react";
 
 const Timeline = () => {
     return (
-        <div className="Timeline">
+        <section className="Timeline">
             Timeline
-        </div>
+        </section>
     );
 };
 

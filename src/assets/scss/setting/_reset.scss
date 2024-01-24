@@ -60,6 +60,14 @@ html {
 	color: var(--white);
 }
 
+main > section {
+	padding: 40px;
+}
+
+footer {
+	background-color: var(--dark-blue);
+	text-align: center;
+}
 
 /* ---------------------------
 	font setting

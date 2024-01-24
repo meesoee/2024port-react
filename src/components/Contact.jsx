@@ -1,7 +1,11 @@
 import React from "react";
 
 const Contact = () => {
-    return <div>Contact : email, github, instagram?</div>;
+    return (
+        <section className="Contact">
+            Contact : email, github, instagram?
+        </section>
+    );
 };
 
 export default Contact;
