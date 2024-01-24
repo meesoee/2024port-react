@@ -6,9 +6,18 @@ header {
         justify-content: space-between;
         align-items: center;
 
+        @media (max-width: 800px){
+            height: 50px;
+        }
+
         nav {
+            background-color: var(--dark-blue);
+
             @media (max-width: 800px){
                 display: none;
+                position: fixed;
+                top: 50px;
+                width: 100%;
             }
 
             ul {
@@ -21,11 +30,22 @@ header {
                     width: 100%;
                     display: block;
                 }
+
+                a {
+                    display: inline-block;
+                    
+                    @media (max-width: 800px){
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
             }
         }
 
         #navToggle {
             display: none;
+            cursor: pointer;
+
             @media (max-width: 800px){
                 display: block;
             }

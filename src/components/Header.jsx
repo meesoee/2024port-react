@@ -51,7 +51,7 @@ const Header = () => {
                     tabIndex="0"
                     onClick={toggleMenu}
                 >
-                    <span>Mobile</span>
+                    <span>Menu</span>
                 </div>
             </div>
         </header>

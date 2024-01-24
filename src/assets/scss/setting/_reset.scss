@@ -52,8 +52,27 @@ a, a:hover, a:focus {
     text-decoration: none;
 }
 
-// @@@ User global reset @@@
+/* ---------------------------
+	@@@ User global reset @@@
+--------------------------- */
 html {
 	background-color: var(--blue);
 	color: var(--white);
+}
+
+
+/* ---------------------------
+	font setting
+--------------------------- */
+
+* {
+	font-family: "Galmuri11", sans-serif;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.mini {
+	font-family: "Galmuri9", sans-serif;
 }
