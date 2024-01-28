@@ -42,7 +42,7 @@ const Header = () => {
                     </ul>
                 </nav>
                 <a id="global" href="/">global</a>
-                <a id="top" href="/">TOP</a>
+                <a id="top" href="#">TOP</a>
                 <div 
                     id="navToggle" 
                     aria-controls="primary-menu"

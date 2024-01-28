@@ -58,6 +58,7 @@ a, a:hover, a:focus {
 html {
 	background-color: var(--blue);
 	color: var(--white);
+	scroll-behavior: smooth;
 }
 
 main > section {

@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
     return (
-        <section className="Contact">
+        <section className="Contact" id="contact">
             Contact : email, github, instagram?
         </section>
     );
