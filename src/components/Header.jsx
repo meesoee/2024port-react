@@ -29,9 +29,9 @@ const Header = () => {
     return (
         <header id="header" role="structure">
             <div className="headerBox">
-                <div className="logo">
-                    <a href="/">LOGO</a>
-                </div>
+                <a href="/">
+                    <img className="icon" src={process.env.PUBLIC_URL + '/img/logo.svg'} alt="logo" />
+                </a>
                 <nav className={`nav ${nav_show ? "show" : ""}`} role="navigation" aria-label="메인 메뉴">
                     <ul>
                         {pageList.map((nav, key) => (
@@ -41,8 +41,12 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <a id="global" href="/">global</a>
-                <a id="top" href="#">TOP</a>
+                <a id="global" href="/">
+                    <img className="icon" src={process.env.PUBLIC_URL + '/img/global.svg'} alt="Language change button" />
+                </a>
+                <a id="top" href="#">
+                    <img className="icon" src={process.env.PUBLIC_URL + '/img/top.svg'} alt="TOP button" />
+                </a>
                 <div 
                     id="navToggle" 
                     aria-controls="primary-menu"

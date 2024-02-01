@@ -3,7 +3,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    
+
     .headerBox {
         display: flex;
         justify-content: space-between;
@@ -60,8 +60,18 @@ header {
         
         #top {
             position: fixed;
-            right: 0;
-            bottom: 0;
+            right: 10px;
+            bottom: 10px;
+            background-color: var(--dark-blue);
+            border-radius: 50px;
+            &:hover {
+                background-color: var(--shadow);
+            }
+
+            .icon {
+                max-width: 18px;
+                padding-bottom: 4px;
+            }
         }
     }
 }

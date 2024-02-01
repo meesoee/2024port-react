@@ -61,21 +61,39 @@ html {
 	scroll-behavior: smooth;
 }
 
-main > section {
-	height: 100vh;
-}
+main {
+	> section {
+		height: 100vh;
+		
+		.section-inner {
+			padding: 40px;
+		}
+	}
 
-main > section .section-inner {
-	padding: 40px;
 }
 
 footer {
 	background-color: var(--dark-blue);
 	text-align: center;
+
+	p {
+		line-height: 3;
+	}
 }
 
-footer p {
-	line-height: 3;
+/* ---------------------------
+	class setting
+--------------------------- */
+
+a:has(.icon) {
+	padding: 20px;
+	&:hover {
+		background-color: var(--shadow);
+	}
+}
+
+.icon {
+	max-width: 32px;
 }
 
 /* ---------------------------
