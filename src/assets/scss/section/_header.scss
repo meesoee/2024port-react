@@ -1,12 +1,9 @@
 header {
     background-color: var(--dark-blue);
-
-    @media (max-width: 800px){
-        width: 100%;
-        position: fixed;
-        top: 0;
-    }
-
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
     .headerBox {
         display: flex;
         justify-content: space-between;

@@ -3,7 +3,9 @@ import React from "react";
 const Archive = () => {
     return (
         <section className="Archive" id="archive">
-            Archive
+            <div className="section-inner">
+                Archive
+            </div>
         </section>
     );
 };

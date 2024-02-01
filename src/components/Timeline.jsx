@@ -3,7 +3,9 @@ import React from "react";
 const Timeline = () => {
     return (
         <section className="Timeline" id="timeline">
-            Timeline
+            <div className="section-inner">
+                Timeline
+            </div>
         </section>
     );
 };

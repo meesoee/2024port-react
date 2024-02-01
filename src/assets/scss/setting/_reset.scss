@@ -62,6 +62,10 @@ html {
 }
 
 main > section {
+	height: 100vh;
+}
+
+main > section .section-inner {
 	padding: 40px;
 }
 
@@ -70,12 +74,17 @@ footer {
 	text-align: center;
 }
 
+footer p {
+	line-height: 3;
+}
+
 /* ---------------------------
 	font setting
 --------------------------- */
 
 * {
 	font-family: "Galmuri11", sans-serif;
+	font-size: 18px;
 }
 
 .bold {
@@ -84,4 +93,5 @@ footer {
 
 .mini {
 	font-family: "Galmuri9", sans-serif;
+	font-size: 10px;
 }
