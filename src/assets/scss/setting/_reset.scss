@@ -90,10 +90,15 @@ a:has(.icon) {
 	&:hover {
 		background-color: var(--shadow);
 	}
+
+	@media (max-width: 800px){
+		padding: 10px;
+	}
 }
 
 .icon {
-	max-width: 32px;
+	max-width: 30px;
+	max-height: 30px;
 }
 
 /* ---------------------------

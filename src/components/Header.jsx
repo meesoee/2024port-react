@@ -47,16 +47,15 @@ const Header = () => {
                 <a id="top" href="#">
                     <img className="icon" src={process.env.PUBLIC_URL + '/img/top.svg'} alt="TOP button" />
                 </a>
-                <div 
-                    id="navToggle" 
-                    aria-controls="primary-menu"
-                    aria-expanded={nav_show ? "true" : "false"}
-                    role="button" 
-                    tabIndex="0"
-                    onClick={toggleMenu}
-                >
-                    <span>Menu</span>
-                </div>
+                <a
+                id="navToggle" 
+                aria-controls="primary-menu"
+                aria-expanded={nav_show ? "true" : "false"}
+                role="button" 
+                tabIndex="0"
+                onClick={toggleMenu}>
+                    <img className="icon" src={process.env.PUBLIC_URL + '/img/menu.svg'} alt="menu" />
+                </a>
             </div>
         </header>
     );
