@@ -1,4 +1,9 @@
 #about {
+    .visual {
+        @media (max-width: 800px){
+            width: 100%;
+        }
+    }
     h1 {
         font-size: 14em;
         margin-bottom: 10px;
@@ -14,7 +19,7 @@
       /* The typing effect */
         @keyframes typing {
             from { width: 0 }
-            to { width: 100% }
+            to { width: 85% }
         }
 
       /* The typewriter cursor effect */
@@ -22,13 +27,29 @@
             from, to { border-color: transparent }
             50% { border-color: var(--white); }
         }
+
+        @media (max-width: 800px){
+            font-size: 3em;
+            width: fit-content;
+            animation: 
+            typing 1s steps(13, end),
+            blink-caret 1s step-end infinite;
+        }
     }
     h3 {
         font-size: 5em;
+        
+        @media (max-width: 800px){
+            font-size: 2em;
+        }
     }
     p {
         font-size: 2em;
         line-height: 2.5;
+
+        @media (max-width: 800px){
+            font-size: 1em;
+        }
     }
     span {
         border: 5px solid var(--point);

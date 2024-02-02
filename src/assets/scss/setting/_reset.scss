@@ -77,6 +77,11 @@ main {
 			left: 1em;
 			font-size: 3em;
 			font-family: "Galmuri9", sans-serif;
+
+			@media (max-width: 800px){
+				font-size: 2em;
+				left: .5em;
+			}
 		}
 
 		.section-inner {
@@ -86,6 +91,11 @@ main {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			
+			@media (max-width: 800px){
+				padding: 20px;
+				flex-direction: column;
+			}
 		}
 	}
 

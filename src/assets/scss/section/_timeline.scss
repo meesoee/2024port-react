@@ -20,6 +20,14 @@
             padding: 10px 20px;
             text-align: center;
             white-space: nowrap;
+
+            @media (max-width: 800px){
+                white-space: normal;
+                word-break: auto-phrase;
+                top: 0;
+                bottom: auto;
+                right: 45px;
+			}
         }
 
         &:hover .point-tooltip {
