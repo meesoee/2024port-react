@@ -1,0 +1,19 @@
+#about {
+    h1 {
+        font-size: 14em;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 5em;
+    }
+    p {
+        font-size: 2em;
+        line-height: 2.5;
+    }
+    span {
+        border: 5px solid var(--point);
+        font-size: inherit;
+        padding: 3px 5px;
+        margin: 0 5px;
+    }
+}

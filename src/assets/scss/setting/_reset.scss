@@ -55,6 +55,11 @@ a, a:hover, a:focus {
 /* ---------------------------
 	@@@ User global reset @@@
 --------------------------- */
+::selection {
+	background-color: var(--white);
+	color: var(--blue);
+}
+
 html {
 	background-color: var(--blue);
 	color: var(--white);
@@ -67,6 +72,10 @@ main {
 		
 		.section-inner {
 			padding: 40px;
+			height: calc(100% - 40px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 
