@@ -7,6 +7,7 @@
         background-color: var(--blue);
         border-radius: 30px;
         position: relative;
+        margin: 15px;
         
         &:hover {
             background-color: var(--dark-blue);
@@ -26,12 +27,33 @@
                 word-break: auto-phrase;
                 top: 0;
                 bottom: auto;
-                right: 45px;
+                right: 300%;
 			}
+        }
+        &:nth-child(even) {
+            .point-tooltip {
+                @media (max-width: 800px){
+                    left: 300%;
+                    right: auto;
+                }
+            }
         }
 
         &:hover .point-tooltip {
             display: block;
+        }
+    }
+    #timeline-bar {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        border-bottom: 1px solid var(--white);
+
+        @media (max-width: 800px){
+            width: 0;
+            height: 100%;
+            border-bottom: 0;
+            border-left: 1px solid var(--white);
         }
     }
 }
