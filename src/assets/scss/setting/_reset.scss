@@ -70,9 +70,18 @@ main {
 	> section {
 		height: 100vh;
 		position: relative;
-		
+
+		.section-caption {
+			position: absolute;
+			top: 2em;
+			left: 1em;
+			font-size: 3em;
+			font-family: "Galmuri9", sans-serif;
+		}
+
 		.section-inner {
 			padding: 40px;
+			padding-bottom: 0;
 			height: calc(100% - 40px);
 			display: flex;
 			align-items: center;
