@@ -2,6 +2,26 @@
     h1 {
         font-size: 14em;
         margin-bottom: 10px;
+
+        overflow: hidden;
+        border-right: .5em solid var(--white);
+        white-space: nowrap;
+        letter-spacing: .05em;
+        animation: 
+            typing 1s steps(11, end),
+            blink-caret 1s step-end infinite;
+
+      /* The typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+      /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--white); }
+        }
     }
     h3 {
         font-size: 5em;
