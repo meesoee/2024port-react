@@ -1,0 +1,36 @@
+#timeline {
+    .section-caption {
+        position: absolute;
+        top: 2em;
+        left: 1em;
+        font-size: 3em;
+        font-family: "Galmuri9", sans-serif;
+    }
+    .time-point {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 10px solid var(--point);
+        background-color: var(--blue);
+        border-radius: 30px;
+        position: relative;
+        
+        &:hover {
+            background-color: var(--dark-blue);
+        }
+        .point-tooltip {
+            display: none;
+            position: absolute;
+            background-color: var(--white);
+            color: var(--blue);
+            bottom: 50px;
+            padding: 10px 20px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        &:hover .point-tooltip {
+            display: block;
+        }
+    }
+}
