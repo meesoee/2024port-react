@@ -3,29 +3,29 @@ import React from "react";
 const portList = [
     {
         name: "밴드 적성 검사",
-        url: "#a",
+        url: "#bandtest",
         year: "2021",
     },
     {
         name: "디자인웍스",
-        url: "#b",
+        url: "#designworks",
         year: "2023",
     },
     {
         name: "롤비티아이",
-        url: "#c",
+        url: "#lolbti",
         year: "2023",
     },
     {
         name: "리액트 사이트",
-        url: "#d",
+        url: "#react",
         year: "2024",
     }
 ];
 
 const Timeline = () => {
     return (
-        <section className="Timeline" id="timeline">
+        <section className="timeline" id="timeline">
             <h3 className="section-caption">Timeline</h3>
             <div className="section-inner">
 

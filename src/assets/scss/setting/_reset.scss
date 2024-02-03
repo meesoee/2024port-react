@@ -64,30 +64,30 @@ html {
 	background-color: var(--blue);
 	color: var(--white);
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 main {
 	> section {
-		height: 100vh;
-		position: relative;
+		min-height: 100vh;
 
 		.section-caption {
-			position: absolute;
+			position: sticky;
 			top: 2em;
-			left: 1em;
+			padding-left: 1em;
 			font-size: 3em;
 			font-family: "Galmuri9", sans-serif;
 
 			@media (max-width: 800px){
 				font-size: 2em;
-				left: .5em;
+				padding-left: .5em;
 			}
 		}
 
 		.section-inner {
 			padding: 40px;
 			padding-bottom: 0;
-			height: calc(100% - 40px);
+			min-height: calc(100vh - 40px);
 			display: flex;
 			align-items: center;
 			justify-content: center;
