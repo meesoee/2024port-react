@@ -29,10 +29,11 @@ const Timeline = () => {
             <h3 className="section-caption">Timeline</h3>
             <div className="section-inner">
 
-                {portList.map((ele) => (
+                {portList.map((ele,key) => (
                     <a className="time-point"
                     href={ele.url}
-                    title={ele.name + ' 포트폴리오로 이동'}>
+                    title={ele.name + ' 포트폴리오로 이동'}
+                    key={key}>
                         <div className="point-tooltip">
                             <b>{ele.year + '년'}</b> {ele.name}
                         </div>

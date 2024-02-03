@@ -1,0 +1,30 @@
+#archive {
+    .tag span {
+        display: inline-block;
+        padding: 5px 8px;
+        border-radius: 10px;
+        margin: 5px;
+        letter-spacing: 1px;
+        text-indent: 3px;
+
+        &.github {
+            background-color: var(--black);
+        }
+        &.html {
+            background-color: var(--orange);
+        }
+        &.css {
+            background-color: var(--sky);
+        }
+        &.javascript {
+            background-color: var(--yellow);
+            color: var(--black);
+        }
+        &.php {
+            background-color: var(--pale-navy);
+        }
+        &.react {
+            background-color: var(--light-sky);
+        }
+    }
+}
