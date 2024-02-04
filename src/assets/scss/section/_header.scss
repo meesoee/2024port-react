@@ -66,12 +66,19 @@ header {
             background-color: var(--dark-blue);
             border-radius: 50px;
             &:hover {
-                background-color: var(--shadow);
+                background-color: var(--point);
+                & svg polyline {
+                    stroke: var(--dark-blue);
+                }
             }
 
-            .icon {
-                max-width: 18px;
+            svg {
+                width: 18px;
                 padding-bottom: 4px;
+                
+                polyline {
+                    stroke: var(--point);
+                }
             }
         }
     }

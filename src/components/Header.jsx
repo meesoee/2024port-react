@@ -19,6 +19,22 @@ const pageList = [
     },
 ];
 
+
+const iconStyle = {
+    fill:"none",
+    strokeLinecap:"round",
+    strokeLinejoin:"round",
+    strokeWidth:"8px"
+};
+
+const icon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 33.75 18.88">
+        <g>
+            <polyline style={iconStyle} points="2 16.88 16.88 2 31.75 16.88"/>
+        </g>
+    </svg>
+)
+
 const Header = () => {
     const [nav_show, setShow] = useState(false);
 
@@ -41,11 +57,11 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <a id="global" href="/">
-                    <img className="icon" src={process.env.PUBLIC_URL + '/img/global.svg'} alt="Language change button" />
+                <a id="global" href="/" alt="Language change button">
+                    <img className="icon" src={process.env.PUBLIC_URL + '/img/global.svg'} alt="Language change button img" />
                 </a>
-                <a id="top" href="#">
-                    <img className="icon" src={process.env.PUBLIC_URL + '/img/top.svg'} alt="TOP button" />
+                <a id="top" href="#" alt="TOP button">
+                    {icon()}
                 </a>
                 <a
                 id="navToggle" 

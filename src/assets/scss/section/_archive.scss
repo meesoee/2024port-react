@@ -1,30 +1,133 @@
 #archive {
-    .tag span {
-        display: inline-block;
-        padding: 5px 8px;
-        border-radius: 10px;
-        margin: 5px;
-        letter-spacing: 1px;
-        text-indent: 3px;
+    .section-inner {
+        section {
+            display: flex;
 
-        &.github {
-            background-color: var(--black);
+            .slidebox {
+                overflow-x: hidden;
+                position: relative;
+                width: var(--slide-w);
+                display: flex;
+                background-color: var(--dark-blue);
+                border: 20px solid var(--dark-blue);
+
+                .slideitem {
+                    min-width: var(--slide-w);
+                    max-width: var(--slide-w);
+                    display: flex;
+                    align-items: center;
+                    // 옆으로 밀어야할 때 margin-left: calc(var(--slide-w) * -1);
+                }
+                    
+                .arrow {
+                    position: absolute;
+                    top: 50%;
+                    border-radius: 40px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--shadow);
+                    color: var(--white);
+
+                    &:hover {
+                        color: var(--dark-blue);
+                        background-color: var(--point);
+                    }
+
+                    &.prev {
+                        left: 10px;
+                    }
+                    &.next {
+                        right: 10px;
+                    }
+                }
+            }
+
+            article {
+                background-color: var(--dark-blue);
+                position: relative;
+                padding: 20px 20px 20px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2 {
+                    font-size: 1.5em;
+                }
+                
+                .tag span {
+                    display: inline-block;
+                    padding: 5px 8px;
+                    border-radius: 10px;
+                    margin: 5px;
+                    letter-spacing: 1px;
+                    text-indent: 3px;
+                    color: var(--white);
+
+                    &:first-child {
+                        margin: 0;
+                        padding-left: 0;
+                        text-indent: 0;
+                    }
+
+                    &.github {
+                        background-color: var(--black);
+                    }
+                    &.html {
+                        background-color: var(--orange);
+                    }
+                    &.css {
+                        background-color: var(--sky);
+                    }
+                    &.scss {
+                        background-color: var(--dark-pink);
+                    }
+                    &.javascript {
+                        background-color: var(--yellow);
+                        color: var(--black);
+                    }
+                    &.php {
+                        background-color: var(--pale-navy);
+                    }
+                    &.react {
+                        background-color: var(--light-sky);
+                    }
+                }
+
+                .desc {
+                    background-color: var(--white);
+                    color: black;
+                    padding: 10px;
+                    min-height: 400px;
+                    min-width: 400px;
+                }
+
+                button {
+                    background-color: var(--point);
+                    color: var(--dark-blue);
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        padding: 10px 0;
+                    }
+                    &:hover {
+                        color: var(--point);
+                        background-color: var(--blue);
+                    }
+                }
+
+                &::before {
+                    content:'';
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 10px;
+                    background-color: var(--point);
+                }
+            }
         }
-        &.html {
-            background-color: var(--orange);
-        }
-        &.css {
-            background-color: var(--sky);
-        }
-        &.javascript {
-            background-color: var(--yellow);
-            color: var(--black);
-        }
-        &.php {
-            background-color: var(--pale-navy);
-        }
-        &.react {
-            background-color: var(--light-sky);
-        }
+
     }
 }
