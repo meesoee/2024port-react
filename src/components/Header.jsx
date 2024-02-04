@@ -57,10 +57,10 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <a id="global" href="/" alt="Language change button">
+                <a id="global" href="/" title="Language change button">
                     <img className="icon" src={process.env.PUBLIC_URL + '/img/global.svg'} alt="Language change button img" />
                 </a>
-                <a id="top" href="#" alt="TOP button">
+                <a id="top" href="#" title="TOP button">
                     {icon()}
                 </a>
                 <a
