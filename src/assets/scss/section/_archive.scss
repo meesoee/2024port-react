@@ -2,14 +2,15 @@
     .section-inner {
         section {
             display: flex;
+            border: 5px solid var(--white);
+            box-shadow: var(--dark-blue) 20px 20px;
 
             .slidebox {
                 overflow-x: hidden;
                 position: relative;
                 width: var(--slide-w);
                 display: flex;
-                background-color: var(--dark-blue);
-                border: 20px solid var(--dark-blue);
+                border: 20px solid transparent;
 
                 .slideitem {
                     min-width: var(--slide-w);
@@ -43,7 +44,6 @@
             }
 
             article {
-                background-color: var(--dark-blue);
                 position: relative;
                 padding: 20px 20px 20px 0;
                 display: flex;
@@ -96,6 +96,7 @@
                 .desc {
                     min-height: 400px;
                     width: 400px;
+                    color: var(--gray);
                     font-family: 'Galmuri9',sans-serif;
                     font-size: 20px;
                     line-height: 1.2;
@@ -117,7 +118,7 @@
                     }
                     &:hover {
                         color: var(--point);
-                        background-color: var(--blue);
+                        background-color: var(--dark-blue);
                     }
                 }
 
