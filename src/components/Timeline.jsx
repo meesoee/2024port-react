@@ -51,7 +51,7 @@ const Timeline = () => {
                 {portList.map((ele,key) => (
                     ele.work === 'n'
                     ?
-                    <a className="time-point"
+                    <a className="time-point port"
                     href={ele.url}
                     title={ele.name + ' 포트폴리오로 이동'}
                     key={key}>
@@ -60,7 +60,7 @@ const Timeline = () => {
                         </div>
                     </a>
                     :
-                    <a className="time-point"
+                    <div className="time-point"
                     title={
                         ele.work === 'y'
                         ?
@@ -72,8 +72,13 @@ const Timeline = () => {
                         <div className="point-tooltip">
                             <b>{ele.year + '년'}</b> {ele.name}
                         </div>
-                    </a>
+                    </div>
                 ))}
+                <div className="time-point now" title="TODAY">
+                    <div className="point-tooltip">
+                        <b>오늘!</b>
+                    </div>
+                </div>
                 <div id="timeline-bar"></div>
             </div>
         </section>
