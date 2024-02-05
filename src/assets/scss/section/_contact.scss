@@ -1,0 +1,53 @@
+#contact {
+    .section-inner {
+        display: flex;
+        gap: 20px;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+
+        article {
+            width: 300px;
+            background-color: var(--gray);
+            height: 400px;
+            padding: 20px;
+            color: var(--blue);
+            word-break: keep-all;
+            line-height: 2;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                background-color: var(--point);
+                margin-top: -20px;
+                box-shadow: var(--dark-blue) 0 20px;
+            }
+
+            @media (max-width: 800px) {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 2em;
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+                border-bottom: 4px double var(--blue);
+            }
+
+            img {
+                width: 50px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                background-color: var(--blue);
+                color: var(--white);
+                padding: 5px 10px;
+                &:hover {
+                    background-color: var(--yellow);
+                    color: var(--blue);
+                }
+            }
+        }
+    }
+}
