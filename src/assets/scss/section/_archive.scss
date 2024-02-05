@@ -4,6 +4,13 @@
             display: flex;
             border: 5px solid var(--white);
             box-shadow: var(--dark-blue) 20px 20px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                margin-left: -20px;
+                margin-top: -10px;
+                box-shadow: var(--dark-blue) 40px 30px;
+            }
 
             .slidebox {
                 overflow-x: hidden;
@@ -96,6 +103,10 @@
                     &.react {
                         background-color: var(--light-sky);
                     }
+                    &.mysql {
+                        background-color: var(--pale-blue);
+                        color: var(--pale-orange)
+                    }
                 }
 
                 .desc {
@@ -124,6 +135,13 @@
                     &:hover {
                         color: var(--point);
                         background-color: var(--dark-blue);
+                    }
+                }
+
+                p a {
+                    font-size: inherit;
+                    &:hover {
+                        text-decoration: underline;
                     }
                 }
 
