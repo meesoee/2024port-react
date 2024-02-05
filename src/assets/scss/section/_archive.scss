@@ -13,6 +13,7 @@
             transition: all .2s ease-in-out;
 
             @media (max-width: 800px){
+                max-width: 100%;
                 flex-direction: column;
                 box-shadow: var(--dark-blue) 0 20px;
 			}
@@ -24,8 +25,8 @@
 
                 @media (max-width: 800px){
                     margin-left: 0px;
-                    margin-top: -10px;
-                    box-shadow: var(--dark-blue) 0 30px;
+                    margin-top: 0px;
+                    box-shadow: var(--dark-blue) 0 20px;
                 }
             }
 
@@ -156,6 +157,7 @@
                     word-break: keep-all;
 
                     @media (max-width: 800px){
+                        width: 100%;
                         min-height: auto;
                     }
                 }
@@ -178,7 +180,7 @@
                 }
 
                 p a {
-                    font-size: inherit;
+                    font: inherit;
                     &:hover {
                         text-decoration: underline;
                     }
