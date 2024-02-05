@@ -21,8 +21,12 @@ const portList = [
         name: "디자인웍스",
         id: "designworks",
         tag: ["github","html","css","javascript"],
-        img: [""],
-        alt: [""],
+        img: [
+            "https://whale-store.pstatic.net/20180905_261/1536114238953OSJJt_JPEG/%C6%C4%B8%AE2.jpg"
+        ],
+        alt: [
+            "1"
+        ],
         desc: "충주시에 위치한 인테리어디자인 업체의 홈페이지를 제작하였습니다.\n\n한 페이지 안에서 소개가 이루어져야하기에 랜딩페이지 스타일로 제작하였으며 상담 예약이 가능하도록 Formspree Api를 연결하여 문의 양식을 추가하였습니다. 또한, 개별 블로그의 최신 글을 가져올 수 있도록 RSS 를 호출하여 게시글 리스트가 출력될 수 있도록 XML을 가공하였습니다.\n\n국내 호스팅 업체를 통해 호스팅/배포하였으며 개발 코드 및 백업은 Github 레포지토리를 통해 관리하고 있습니다.",
         date: "2023년 10월 (7일 소요)",
         url: "http://design-works.co.kr/",

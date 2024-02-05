@@ -27,7 +27,7 @@
                     transition: margin-left .2s ease-in-out;
                 }
                 
-                &:hover .slideitem:first-child {
+                &:has(.slideitem:nth-child(2)):hover .slideitem:first-child {
                     margin-left: calc(var(--slide-w) * -1);
                 }
 
