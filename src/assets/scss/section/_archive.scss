@@ -1,23 +1,46 @@
 #archive {
     .section-inner {
+
+        @media (max-width: 800px){
+            min-height: auto;
+            margin-bottom: 20px;
+        }
+
         section {
             display: flex;
             border: 5px solid var(--white);
             box-shadow: var(--dark-blue) 20px 20px;
             transition: all .2s ease-in-out;
 
+            @media (max-width: 800px){
+                flex-direction: column;
+                box-shadow: var(--dark-blue) 0 20px;
+			}
+
             &:hover {
                 margin-left: -20px;
                 margin-top: -10px;
                 box-shadow: var(--dark-blue) 40px 30px;
+
+                @media (max-width: 800px){
+                    margin-left: 0px;
+                    margin-top: -10px;
+                    box-shadow: var(--dark-blue) 0 30px;
+                }
             }
 
+
             .slidebox {
+                box-sizing: border-box;
                 overflow-x: hidden;
                 position: relative;
                 width: var(--slide-w);
                 display: flex;
                 border: 20px solid transparent;
+
+                @media (max-width: 800px){
+                    width: var(--slide-w-m);
+                }
 
                 .slideitem {
                     min-width: var(--slide-w);
@@ -25,10 +48,18 @@
                     display: flex;
                     align-items: center;
                     transition: margin-left .2s ease-in-out;
+
+                    @media (max-width: 800px){
+                        min-width: var(--slide-w-m);
+                        max-width: var(--slide-w-m);
+                    }
                 }
                 
                 &:has(.slideitem:nth-child(2)):hover .slideitem:first-child {
                     margin-left: calc(var(--slide-w) * -1);
+                    @media (max-width: 800px){
+                        margin-left: calc(var(--slide-w-m) * -1);
+                    }
                 }
 
                 .arrow {
@@ -61,6 +92,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+
+                @media (max-width: 800px){
+                    padding: 20px;
+                }
 
                 h2 {
                     font-size: 1.5em;
@@ -119,6 +154,10 @@
                     white-space: pre-wrap;
                     letter-spacing: 1px;
                     word-break: keep-all;
+
+                    @media (max-width: 800px){
+                        min-height: auto;
+                    }
                 }
 
                 button {

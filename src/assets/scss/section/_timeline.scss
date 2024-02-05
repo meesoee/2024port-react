@@ -31,13 +31,13 @@
                 word-break: auto-phrase;
                 top: 0;
                 bottom: auto;
-                right: 300%;
+                right: 150%;
 			}
         }
         &:nth-child(even) {
             .point-tooltip {
                 @media (max-width: 800px){
-                    left: 300%;
+                    left: 150%;
                     right: auto;
                 }
             }

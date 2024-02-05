@@ -84,10 +84,13 @@ main {
 			padding-left: 1em;
 			font-size: 3em;
 			font-family: "Galmuri9", sans-serif;
+			z-index: 99;
+			background-color: var(--blue);
+			display: inline-block;
 
 			@media (max-width: 800px){
 				font-size: 2em;
-				padding-left: .5em;
+				padding: 10px 20px;
 			}
 		}
 
