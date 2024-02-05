@@ -17,10 +17,15 @@
                     max-width: var(--slide-w);
                     display: flex;
                     align-items: center;
-                    // 옆으로 밀어야할 때 margin-left: calc(var(--slide-w) * -1);
+                    transition: margin-left .2s ease-in-out;
                 }
-                    
+                
+                &:hover .slideitem:first-child {
+                    margin-left: calc(var(--slide-w) * -1);
+                }
+
                 .arrow {
+                    display: none;
                     position: absolute;
                     top: 50%;
                     border-radius: 40px;

@@ -46,17 +46,14 @@ const portList = [
     }
 ];
 
-
 const Archive = () => {
     return (
         <section className="archive" id="archive">
             <h3 className="section-caption">Archive</h3>
-
             {portList.map((ele,key) => (
                 <div className="section-inner" id={ele.id} key={key}>
                     <section>
                         <div className="slidebox">
-                            <button className="arrow prev">&lt;</button>
                             {ele.img && ( // 아래 응용
                                 ele.img.map((img, index) => (
                                     <div className="slideitem">
@@ -64,7 +61,8 @@ const Archive = () => {
                                         alt={ele.alt[index]} />
                                     </div>
                                 ))
-                            )}
+                                )}
+                            <button className="arrow prev">&lt;</button>
                             <button className="arrow next">&gt;</button>
                         </div>
                         <article>
