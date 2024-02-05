@@ -14,7 +14,7 @@ const pageList = [
         url: "#archive",
     },
     {
-        title: "contact",
+        title: "Contact",
         url: "#contact",
     },
 ];

@@ -32,7 +32,6 @@
 
 
             .slidebox {
-                box-sizing: border-box;
                 overflow-x: hidden;
                 position: relative;
                 width: var(--slide-w);
@@ -40,6 +39,7 @@
                 border: 20px solid transparent;
 
                 @media (max-width: 800px){
+                    box-sizing: border-box;
                     width: var(--slide-w-m);
                 }
 

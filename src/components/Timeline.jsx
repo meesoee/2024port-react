@@ -45,7 +45,7 @@ const portList = [
 const Timeline = () => {
     return (
         <section className="timeline" id="timeline">
-            <h3 className="section-caption">Timeline</h3>
+            <h3 className="section-caption">Timeline ...</h3>
             <div className="section-inner">
 
                 {portList.map((ele,key) => (
