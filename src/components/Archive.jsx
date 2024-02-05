@@ -70,7 +70,7 @@ const Archive = () => {
                                     </div>
                                 ))
                             )}
-                            <button  onClick={nextSlide} className="arrow next">&gt;</button>
+                            <button className="arrow next">&gt;</button>
                         </div>
                         <article>
                             <h2>{ele.name}</h2>
