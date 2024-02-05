@@ -1,60 +1,99 @@
 #about {
+    .section-inner {
+        flex-direction: column;
+    }
+
     .visual {
         @media (max-width: 800px){
             width: 100%;
         }
-    }
-    h1 {
-        font-size: 14em;
-        margin-bottom: 10px;
 
-        overflow: hidden;
-        border-right: .5em solid var(--white);
-        white-space: nowrap;
-        letter-spacing: .05em;
-        animation: 
-            typing 1s steps(11, end),
-            blink-caret 1s step-end infinite;
-
-      /* The typing effect */
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 85% }
-        }
-
-      /* The typewriter cursor effect */
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: var(--white); }
-        }
-
-        @media (max-width: 800px){
-            font-size: 3em;
-            width: fit-content;
+        h1 {
+            font-size: 14em;
+            margin-bottom: 10px;
+    
+            overflow: hidden;
+            border-right: .5em solid var(--white);
+            white-space: nowrap;
+            letter-spacing: .05em;
             animation: 
-            typing 1s steps(13, end),
-            blink-caret 1s step-end infinite;
-        }
-    }
-    h3 {
-        font-size: 5em;
-        
-        @media (max-width: 800px){
-            font-size: 2em;
-        }
-    }
-    p {
-        font-size: 2em;
-        line-height: 2.5;
+                typing 1s steps(11, end),
+                blink-caret 1s step-end infinite;
 
-        @media (max-width: 800px){
-            font-size: 1em;
+          /* The typing effect */
+            @keyframes typing {
+                from { width: 0 }
+                to { width: 85% }
+            }
+
+          /* The typewriter cursor effect */
+            @keyframes blink-caret {
+                from, to { border-color: transparent }
+                50% { border-color: var(--white); }
+            }
+
+            @media (max-width: 800px){
+                font-size: 3em;
+                width: fit-content;
+                animation: 
+                typing 1s steps(13, end),
+                blink-caret 1s step-end infinite;
+            }
         }
+        h3 {
+            font-size: 5em;
+            
+            @media (max-width: 800px){
+                font-size: 2em;
+            }
+        }
+        p {
+            font-size: 2em;
+            line-height: 2.5;
+
+            @media (max-width: 800px){
+                font-size: 1em;
+            }
+        }
+        span {
+            border: 5px solid var(--point);
+            font-size: inherit;
+            padding: 3px 5px;
+            margin: 0 5px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                background-color: var(--point);
+                color: var(--blue);
+            }
+        }
+
+        .kor {
+            margin-top: -150px;
+            text-align: right;
+            float: right;
+            line-height: 1.5;
+
+            @media (max-width: 800px){
+                float: none;
+                margin: 50px 0 20px 0;
+                text-align: left;
+            }
+
+            span {
+                margin: 0;
+                border: 0;
+                background: none;
+                color: var(--point);
+                font-weight: bold;
+            }
+        }
+
+    &~p {
+        background-color: var(--gray);
+        margin-top: 40px;
+        padding: 10px 20px;
+        color: var(--blue);
     }
-    span {
-        border: 5px solid var(--point);
-        font-size: inherit;
-        padding: 3px 5px;
-        margin: 0 5px;
     }
 }
