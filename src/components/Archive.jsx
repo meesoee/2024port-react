@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-// import { nextSlide } from '../utils/nextSlide';
+import React from "react";
 
 const portList = [
     {
@@ -47,21 +46,15 @@ const portList = [
     }
 ];
 
-const handleClick = () => {
-    console.log('버튼이 클릭되었습니다.');
-};
-
 const Archive = () => {
     console.log('Archive 컴포넌트가 렌더링 되었습니다.');
     return (
         <section className="archive" id="archive">
             <h3 className="section-caption">Archive</h3>
-            <button onClick={handleClick}>클릭하세요</button>
             {portList.map((ele,key) => (
                 <div className="section-inner" id={ele.id} key={key}>
                     <section>
                         <div className="slidebox">
-                            <button className="arrow prev" onClick={console.log('a')}>&lt;</button>
                             {ele.img && ( // 아래 응용
                                 ele.img.map((img, index) => (
                                     <div className="slideitem">
@@ -69,7 +62,8 @@ const Archive = () => {
                                         alt={ele.alt[index]} />
                                     </div>
                                 ))
-                            )}
+                                )}
+                            <button className="arrow prev">&lt;</button>
                             <button className="arrow next">&gt;</button>
                         </div>
                         <article>
