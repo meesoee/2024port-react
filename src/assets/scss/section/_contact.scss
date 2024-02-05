@@ -10,8 +10,9 @@
         article {
             width: 300px;
             background-color: var(--gray);
-            height: 400px;
+            height: 500px;
             padding: 20px;
+            box-sizing: border-box;
             color: var(--blue);
             word-break: keep-all;
             line-height: 2;
@@ -21,10 +22,16 @@
                 background-color: var(--point);
                 margin-top: -20px;
                 box-shadow: var(--dark-blue) 0 20px;
+
+                @media (max-width: 800px) {
+                    margin-top: 0;
+                    box-shadow: none;
+                }
             }
 
             @media (max-width: 800px) {
                 width: 100%;
+                height: auto;
             }
 
             h2 {
@@ -37,6 +44,12 @@
             img {
                 width: 50px;
                 margin-bottom: 30px;
+            }
+
+            &:last-child {
+                img {
+                    margin-bottom: 15px;
+                }
             }
 
             a {

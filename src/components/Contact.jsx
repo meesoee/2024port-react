@@ -15,12 +15,14 @@ const Contact = () => {
                 <article>
                     <img src={emailLogo} alt="이메일 아이콘" />
                     <h2>E-mail</h2>
-                    <a href="mailto:meesoeee@gmail.com">meesoeee@gmail.com</a>
+                    <a className="mini" href="mailto:meesoeee@gmail.com">meesoeee@gmail.com</a>
+                    <p>이메일 무단수집 거부.</p>
                 </article>
                 <article>
                     <img src={GitHubLogo} alt="깃허브 아이콘" />
                     <h2>GitHub</h2>
-                    <a href="https://github.com/meesoee" target="_blank">https://github.com/meesoee</a>
+                    <a className="mini" href="https://github.com/meesoee" target="_blank">https://github.com/meesoee</a>
+                    <p>가끔 잔디를 심는 모습을 볼 수 있을지도..?</p>
                 </article>
             </div>
         </section>
