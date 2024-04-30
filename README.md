@@ -14,4 +14,4 @@ https://webstoryboy.co.kr/1934 의 내용을 참고하여 리액트로 포트폴
 2024.01.04 vscode + git
 
 ## 배포
-Netlify, https://meesoee.netlify.app/
+Netlify, [https://meesoee.netlify.app/](https://meesoee-portfolio.netlify.app/)
