@@ -39,6 +39,12 @@ const portList = [
         name: "리액트 사이트",
         url: "#react",
         year: "2024",
+    },
+    {
+        work: "n",
+        name: "부평고등학교 : 보조실무사",
+        url: "#bphigh",
+        year: "2024",
     }
 ];
 
