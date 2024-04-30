@@ -41,7 +41,7 @@ const portList = [
         year: "2024",
     },
     {
-        work: "n",
+        work: "y",
         name: "부평고등학교 : 보조실무사",
         year: "2024",
     }
